@@ -1,0 +1,9 @@
+<p>List of Students</p>
+<% for student in @students %>
+<div class="students">
+  <p>Name: <%= student.first_name() %> <%= student.last_name() %></p>
+  <p>Age: <%= student.age() %> </p>
+  <p><a href="/hogwarts/<%= student.id %>">Show Student</a></p>
+<hr/>
+</div>
+<% end %>

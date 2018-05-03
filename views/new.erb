@@ -1,0 +1,26 @@
+<div class="new_student">
+<form method="post" action="/hogwarts">
+  <fieldset>
+    <label for="first_name">First Name:</label>
+    <input type="text" name="first_name" id="first-name">
+  </fieldset>
+  <fieldset>
+    <label for="last_Name">Last Name:</label>
+    <input type="text" name="last_name" id="last-name">
+  </fieldset>
+  <fieldset>
+    <label for="age">Age</label>
+    <input type="number" name="age" id="age">
+  </fieldset>
+  <fieldset>
+    <label for="house_select"> Select House</label>
+   <select name="house_id" id="house_select">
+     <% @houses.each do |house| %>
+         <option value=<%= house.id %>><%= house.name.capitalize %></option>
+     <% end %>
+    </select>
+  </fieldset>
+    <input type="submit" value="Apply">
+    <input id="resetnew" type="reset" value="Reset">
+</form>
+</div>

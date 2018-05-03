@@ -1,0 +1,59 @@
+body {
+background-color: Silver;
+font-family: 'Indie Flower', cursive;
+margin: 10em;
+font-size: 1.5em;
+}
+h2 {
+  text-align: center;
+  font-size: 2em;
+}
+nav {
+  text-align: center;
+}
+
+input[type=submit], input[type=reset] {
+  background-color: Black;
+  color: Silver;
+  border: 0.1em outset #C0C0C0;
+  padding: 0.3em 0.6em;
+  text-decoration: none;
+  margin: 0.2em 0.4em;
+  cursor: pointer;
+  font-size: 0.8em;
+}
+
+#resetnew {
+  background-color: Pink;
+  color: Black;
+}
+/*
+#edit {
+  background-color: Pink;
+
+} */
+
+.students {
+  border: 0.1em outset Black;
+  text-align: center;
+  margin: 0.5em;
+  padding: 0.5em;
+}
+
+a:visited {
+color: HotPink;
+background-color: transparent;
+text-decoration: none;
+}
+
+a:link{
+  color: Black;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+color: Pink;
+background-color: transparent;
+text-decoration: none;
+}
